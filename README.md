@@ -33,20 +33,17 @@ Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA
 | MSFT   | 4.69                     | 19.58          | 0.19          | -43.50           |
 | AMZN   | 4.43                     | 25.16          | 0.14          | -48.39           |
 
+### Visualisation de la stratégie sur AAPL
+
+![AAPL Backtest](figures/aapl_backtest.png)
+
 > **Conclusion** : Apple (AAPL) présente le meilleur ratio rendement/risque. Tesla est très performant mais extrêmement volatil. MSFT et AMZN sous-performent ici avec cette stratégie.
 
 ---
 
 ## Structure du projet
 
-trading-strategy-backtest/
-├── main.py # Exécute le backtest sur plusieurs actifs
-├── strategy.py # Stratégie SMA crossover
-├── backtest.py # Moteur de calcul des performances
-├── metrics.py # Calcul des métriques : Sharpe, drawdown, etc.
-├── requirements.txt # Bibliothèques nécessaires
-├── figures/ # Graphiques éventuels
-└── README.md
+``` trading-strategy-backtest/ ├── main.py # Exécute le backtest sur plusieurs actifs ├── strategy.py # Stratégie SMA crossover ├── backtest.py # Moteur de calcul des performances ├── metrics.py # Calcul des métriques : Sharpe, drawdown, etc. ├── requirements.txt # Bibliothèques nécessaires ├── figures/ # Graphiques éventuels └── README.md ```
 
 ## Lancer le projet (tout en un)
 
