@@ -39,6 +39,16 @@ Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA
 
 > **Conclusion** : Apple (AAPL) présente le meilleur ratio rendement/risque. Tesla est très performant mais extrêmement volatil. MSFT et AMZN sous-performent ici avec cette stratégie.
 
+### 📈 Comparaison visuelle : SMA vs SMA + RSI
+
+Ces graphiques comparent les performances entre la stratégie de base (SMA) et la version améliorée (SMA + RSI).
+
+#### 🔷 Sharpe Ratio
+![Sharpe Comparison](figures/sharpe_comparaison.png)
+
+#### 🔷 Max Drawdown
+![Drawdown Comparison](figures/drawdown_comparaison.png)
+
 ---
 
 ## 📂 Structure du projet
