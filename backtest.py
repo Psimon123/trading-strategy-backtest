@@ -10,3 +10,4 @@ def backtest_strategy(df):
     df["Cumulative_Strategy"] = (1 + df["Strategy_Return"]).cumprod()
     
     return df
+

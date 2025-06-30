@@ -1,4 +1,4 @@
-# Trading Strategy Backtest — SMA Crossover
+# Trading Strategy Backtest
 
 Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA) sur plusieurs actifs boursiers, avec analyse complète des performances (rendement, volatilité, Sharpe ratio, drawdown).
 

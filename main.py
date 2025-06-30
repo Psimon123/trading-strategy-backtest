@@ -2,6 +2,7 @@ import yfinance as yf
 from strategy import moving_average_crossover
 from backtest import backtest_strategy
 from metrics import calculate_performance_metrics
+from strategy import sma_rsi_strategy
 import pandas as pd
 
 # Liste des tickers à tester
@@ -24,7 +25,7 @@ for ticker in tickers:
         continue
 
     # Application de la stratégie
-    df = moving_average_crossover(df, short_window=20, long_window=50)
+    df = sma_rsi_strategy(df, short_window=20, long_window=50, rsi_period=14)
     df = backtest_strategy(df)
 
     # Calcul des métriques
