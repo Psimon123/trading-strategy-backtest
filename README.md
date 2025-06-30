@@ -6,10 +6,12 @@ Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA
 
 ## Objectif du projet
 
-- Implémenter une stratégie simple : SMA(20) croise SMA(50)
-- La tester sur différents actifs (AAPL, TSLA, SPY, AMZN, MSFT)
+- Implémenter une première stratégie simple basée sur le croisement de moyennes mobiles : SMA(20) et SMA(50)
+- L’enrichir en y ajoutant un filtre de momentum avec l’indicateur RSI pour améliorer la robustesse
+- Backtester ces stratégies sur plusieurs actifs : AAPL, TSLA, SPY, AMZN, MSFT
 - Comparer les performances : rendement annualisé, volatilité, Sharpe ratio, drawdown
-- Visualiser et analyser les résultats comme le ferait un desk de trading
+- Visualiser et analyser les résultats de façon professionnelle, comme le ferait un desk de trading ou un analyste quantitatif
+
 
 ---
 
@@ -61,7 +63,7 @@ Ces graphiques comparent les performances entre la stratégie de base (SMA) et l
 
 ---
 
-## 📂 Structure du projet
+## Structure du projet
 
 ```
 trading-strategy-backtest/
