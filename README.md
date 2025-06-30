@@ -41,7 +41,18 @@ Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA
 
 ---
 
-## 📂 Structure du projet ``` trading-strategy-backtest/ ├── main.py # Exécute le backtest sur plusieurs actifs ├── strategy.py # Stratégie SMA crossover ├── backtest.py # Moteur de calcul des performances ├── metrics.py # Calcul des métriques : Sharpe, drawdown, etc. ├── requirements.txt # Bibliothèques nécessaires ├── figures/ # Graphiques éventuels └── README.md ```
+## 📂 Structure du projet
+
+```
+trading-strategy-backtest/
+├── main.py             # Exécute le backtest sur plusieurs actifs
+├── strategy.py         # Stratégie SMA crossover
+├── backtest.py         # Moteur de calcul des performances
+├── metrics.py          # Calcul des métriques : Sharpe, drawdown, etc.
+├── requirements.txt    # Bibliothèques nécessaires
+├── figures/            # Graphiques éventuels
+└── README.md
+```
 
 ## Lancer le projet (tout en un)
 
