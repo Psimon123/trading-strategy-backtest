@@ -43,13 +43,13 @@ Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA
 
 ## Exemple de résultat SMA + RSI
 
-=== COMPARAISON DES ACTIFS ===
-Ticker  Rendement annualisé (%)  Volatilité annualisée (%)  Sharpe Ratio  Max Drawdown (%)
-  AAPL                    17.25                      16.95          0.96            -26.52
-  TSLA                    35.91                      37.51          0.93            -37.81
-   SPY                     5.07                       9.45          0.43            -15.48
-  MSFT                     3.92                      15.10          0.19            -36.29
-  AMZN                     3.23                      20.13          0.11            -32.26
+| Ticker | Rendement annualisé (%) | Volatilité (%) | Sharpe Ratio | Max Drawdown (%) |
+|--------|--------------------------|----------------|---------------|------------------|
+| AAPL   | 17.25                    | 16.95          | 0.96          | -26.52           |
+| TSLA   | 35.91                    | 37.51          | 0.93          | -37.81           |
+| SPY    | 5.07                     | 9.45           | 0.43          | -15.48           |
+| MSFT   | 3.92                     | 15.10          | 0.19          | -36.29           |
+| AMZN   | 3.23                     | 20.13          | 0.11          | -32.26           |
 
 ### Comparaison visuelle : SMA vs SMA + RSI
 
