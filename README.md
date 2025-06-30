@@ -37,6 +37,8 @@ Un projet de backtesting d'une stratégie de croisement de moyennes mobiles (SMA
 
 ![AAPL Backtest](figures/aapl_backtest.png)
 
+---
+
 ## Exemple de résultat SMA + RSI
 
 === COMPARAISON DES ACTIFS ===
@@ -51,10 +53,10 @@ Ticker  Rendement annualisé (%)  Volatilité annualisée (%)  Sharpe Ratio  Max
 
 Ces graphiques comparent les performances entre la stratégie de base (SMA) et la version améliorée (SMA + RSI).
 
-#### 🔷 Sharpe Ratio
+#### Sharpe Ratio
 ![Sharpe Comparison](figures/sharpe_comparaison.png)
 
-#### 🔷 Max Drawdown
+#### Max Drawdown
 ![Drawdown Comparison](figures/drawdown_comparaison.png)
 
 ---
