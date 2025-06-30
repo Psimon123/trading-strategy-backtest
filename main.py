@@ -32,6 +32,27 @@ for ticker in tickers:
     metrics["Ticker"] = ticker
     results.append(metrics)
 
+# Génère un graphique sur AAPL uniquement
+if "AAPL" in tickers:
+    df_aapl = yf.download("AAPL", start=start_date, end=end_date)
+    df_aapl = moving_average_crossover(df_aapl, short_window=20, long_window=50)
+    df_aapl = backtest_strategy(df_aapl)
+
+    import matplotlib.pyplot as plt
+
+    plt.figure(figsize=(12, 6))
+    plt.plot(df_aapl["Cumulative_BuyHold"], label="Buy & Hold", linestyle="--")
+    plt.plot(df_aapl["Cumulative_Strategy"], label="Stratégie SMA", linewidth=2)
+    plt.title("Apple (AAPL) — Rendement Cumulé")
+    plt.xlabel("Date")
+    plt.ylabel("Capital (base 1.0)")
+    plt.grid()
+    plt.legend()
+
+    # 🔽 Sauvegarde dans le dossier /figures
+    plt.savefig("figures/aapl_backtest.png")
+    plt.close()
+
 # Création du tableau récapitulatif
 df_results = pd.DataFrame(results)
 df_results = df_results[["Ticker", "Rendement annualisé (%)", "Volatilité annualisée (%)", "Sharpe Ratio", "Max Drawdown (%)"]]
